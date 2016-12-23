@@ -1,0 +1,409 @@
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.safeArea, .tabuaCentro {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box100, .box95, .box90, .box85, .box80, .box75, .box70, .box66, .box65, .box60, .box55, .box50, .box45, .box40, .box35, .box33, .box30, .box25, .box20, .box15, .box10, .box5 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+
+.tabua, .tabuaCentro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cel25 {
+  width: 25%;
+}
+
+.cel33 {
+  width: 33.3333%;
+}
+
+.cel50 {
+  width: 50%;
+}
+
+.cel66 {
+  width: 66.6666%;
+}
+
+.cel75 {
+  width: 75%;
+}
+
+.celEsconder {
+  display: none;
+}
+
+.emColuna {
+  flex-direction: column;
+}
+
+.reverso {
+  flex-direction: row-reverse;
+}
+
+.emLinhas {
+  flex-wrap: wrap;
+}
+
+.umaLinha {
+  flex-wrap: wrap;
+}
+
+.colunaReverso {
+  flex-direction: column-reverse;
+}
+
+.naEscrita {
+  justify-content: flex-start;
+}
+
+.praDireita {
+  justify-content: flex-end;
+}
+
+.proCentro, .centroTela {
+  justify-content: center;
+}
+
+.afastadas {
+  justify-content: space-between;
+}
+
+.noSeuEspaco {
+  justify-content: space-around;
+}
+
+.proTopo {
+  align-items: flex-start;
+}
+
+.praBase {
+  align-items: flex-end;
+}
+
+.proEixo, .centroTela {
+  align-items: center;
+}
+
+.linhaDoTexto {
+  align-items: baseline;
+}
+
+.esticabox {
+  align-items: stretch;
+}
+
+.boxProFluxo {
+  align-self: auto;
+}
+
+.boxProInicio {
+  align-self: flex-start;
+}
+
+.boxProFim {
+  align-self: flex-end;
+}
+
+.boxProCentro {
+  align-self: center;
+}
+
+.boxPraLinhaDoTexto {
+  align-self: baseline;
+}
+
+.boxEsticada {
+  align-self: stretch;
+}
+
+@media screen and (min-width: 40em), print {
+  .box100 {
+    width: 100%;
+  }
+  .box95 {
+    width: 95%;
+  }
+  .box90 {
+    width: 90%;
+  }
+  .box85 {
+    width: 85%;
+  }
+  .box80 {
+    width: 80%;
+  }
+  .box75 {
+    width: 75%;
+  }
+  .box70 {
+    width: 70%;
+  }
+  .box66 {
+    width: 66.6666%;
+  }
+  .box65 {
+    width: 65%;
+  }
+  .box60 {
+    width: 60%;
+  }
+  .box55 {
+    width: 55%;
+  }
+  .box50 {
+    width: 50%;
+  }
+  .box45 {
+    width: 45%;
+  }
+  .box40 {
+    width: 40%;
+  }
+  .box35 {
+    width: 35%;
+  }
+  .box33 {
+    width: 33.3333%;
+  }
+  .box30 {
+    width: 30%;
+  }
+  .box25 {
+    width: 25%;
+  }
+  .box20 {
+    width: 20%;
+  }
+  .box15 {
+    width: 15%;
+  }
+  .box10 {
+    width: 10%;
+  }
+  .box5 {
+    width: 5%;
+  }
+  .pcEsconder {
+    display: none;
+  }
+  .celEsconder {
+    display: block;
+  }
+  div .celEsconder:not([class^="box"]) {
+    display: flex;
+  }
+  .umaLinha {
+    flex-wrap: nowrap;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.3em 0;
+  line-height: 1.1em;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6em;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin: 0 0 0.6em 0;
+}
+
+b {
+  font-size: 1rem;
+  line-height: 1.6em;
+  font-weight: 700;
+  line-height: 1.8em;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+@keyframes grade {
+  0% {
+    transform: skewY(0deg) skewX(10deg);
+  }
+  25% {
+    transform: skewY(10deg);
+  }
+  50% {
+    transform: skewY(0deg) skewX(-10deg);
+  }
+  75% {
+    transform: skewY(-10deg);
+  }
+  100% {
+    transform: skewY(0deg) skewX(10deg);
+  }
+}
+
+.euDuardo {
+  height: 100vh;
+  background-image: url(../img/eduardo_coelho.svg), url(../img/silhueta_color.svg);
+  background-blend-mode: screen;
+  background-repeat: no-repeat , no-repeat;
+  background-size: cover , cover;
+  background-position: center center , center;
+}
+
+.ladrilhos {
+  position: fixed;
+  top: -40vh;
+  left: -40vw;
+  height: 200vh;
+  width: 200vw;
+  background-image: url(../img/ladrilhos-01.svg);
+  background-size: 10rem;
+  z-index: -1;
+  animation: grade 8s infinite;
+  opacity: 01;
+}
+
+.olar {
+  background-color: #fff;
+  padding: 2rem;
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  box-shadow: 0 0 0 0.5rem #00ffff;
+}
+
+.olar h1 {
+  color: #000080;
+  font-weight: 600;
+  text-shadow: 0px 2px #00ffff;
+}
+
+.olar h3 {
+  color: #00dede;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.olar p, .olar b {
+  color: #7e8798;
+}
+
+.contatos.box100 {
+  padding: 0;
+  margin: 0 0 0.8rem 0;
+}
+
+.botao {
+  border: 1px solid #000080;
+  padding: 1rem;
+  text-align: center;
+  color: #000080;
+  font-size: 0.9rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.call {
+  color: #fff;
+  background-color: #000080;
+}
+
+.portfolio {
+  background-color: rgba(0, 0, 128, 0.9);
+  min-height: 100vh;
+  padding-top: 1.5rem;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin: 0.3em 0;
+  color: #00ffff;
+}
+
+.slide {
+  background-color: #000080;
+  padding: 0.3rem;
+  border-radius: 0.2em;
+  margin: 0 0 2rem 0;
+  transition: transform 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.slide h5 {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #7e8798;
+  margin-top: 0.5em;
+  text-align: center;
+  color: #fff;
+  line-height: 1.4em;
+}
+
+@media print {
+  html {
+    font-size: 2.5mm;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  div[class^="caixa"] {
+    page-break-inside: avoid;
+  }
+  .esconderImpresso {
+    display: none;
+  }
+  .soImpressora {
+    display: block;
+  }
+}
