@@ -273,6 +273,17 @@ b {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.6rem;
+  background-color: #00ffff;
 }
 
 @keyframes grade {
@@ -318,7 +329,6 @@ a {
 .olar {
   background-color: #fff;
   padding: 2rem;
-  border-top-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   box-shadow: 0 0 0 0.5rem #00ffff;
 }
@@ -348,6 +358,7 @@ a {
   border: 1px solid #000080;
   padding: 1rem;
   text-align: center;
+  font-weight: 700;
   color: #000080;
   font-size: 0.9rem;
   border-top-left-radius: 0.4rem;
@@ -359,13 +370,13 @@ a {
   background-color: #000080;
 }
 
-.portfolio {
+#portfolio {
   background-color: rgba(0, 0, 128, 0.9);
   min-height: 100vh;
   padding-top: 1.5rem;
 }
 
-.portfolio h2 {
+#portfolio h2 {
   text-align: center;
   margin: 0.3em 0;
   color: #00ffff;
