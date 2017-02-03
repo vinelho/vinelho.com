@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.estante {
+  max-width: 78rem;
+}
+
+.tabua {
+  display: flex;
+}
+
+.estante {
+  width: 100%;
+}
+
+.tabua {
+  flex-wrap: wrap;
+}
+
+.cel25 {
+  width: 25%;
+}
+
+.cel33 {
+  width: 33.3333%;
+}
+
+.cel50 {
+  width: 50%;
+}
+
+.cel66 {
+  width: 66.6666%;
+}
+
+.cel75 {
+  width: 75%;
+}
+
+.celEsconder {
+  display: none;
+}
+
+.box100, .box90, .box80, .box75, .box70, .box66, .box60, .box50, .box40, .box33, .box30, .box25, .box20, .box15, .box10, .box5 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.emColuna {
+  flex-direction: column;
+}
+
+.reverso {
+  flex-direction: row-reverse;
+}
+
+.emLinhas {
+  flex-wrap: wrap;
+}
+
+.naEscrita {
+  justify-content: flex-start;
+}
+
+.praDireita {
+  justify-content: flex-end;
+}
+
+.proCentro {
+  justify-content: center;
+}
+
+.afastadas {
+  justify-content: space-between;
+}
+
+.noSeuEspaco {
+  justify-content: space-around;
+}
+
+.proTopo {
+  align-items: flex-start;
+}
+
+.praBase {
+  align-items: flex-end;
+}
+
+.proMeio {
+  align-items: center;
+}
+
+.linhaDoTexto {
+  align-items: baseline;
+}
+
+.esticabox {
+  align-items: stretch;
+}
+
+.CxProFluxo {
+  align-self: auto;
+}
+
+.CxProInicio {
+  align-self: flex-start;
+}
+
+.CxProFim {
+  align-self: flex-end;
+}
+
+.CxProCentro {
+  align-self: center;
+}
+
+.CxPraLinhaDoTexto {
+  align-self: baseline;
+}
+
+.CxEsticada {
+  align-self: stretch;
+}
+
+@media screen and (min-width: 40em) {
+  .box100 {
+    width: 100%;
+  }
+  .box90 {
+    width: 90%;
+  }
+  .box80 {
+    width: 80%;
+  }
+  .box75 {
+    width: 75%;
+  }
+  .box70 {
+    width: 70%;
+  }
+  .box66 {
+    width: 66.6666%;
+  }
+  .box60 {
+    width: 60%;
+  }
+  .box50 {
+    width: 50%;
+  }
+  .box40 {
+    width: 40%;
+  }
+  .box33 {
+    width: 33.3333%;
+  }
+  .box30 {
+    width: 30%;
+  }
+  .box25 {
+    width: 25%;
+  }
+  .box20 {
+    width: 20%;
+  }
+  .box15 {
+    width: 15%;
+  }
+  .box10 {
+    width: 10%;
+  }
+  .box5 {
+    width: 5%;
+  }
+  .tabua {
+    display: nowrap;
+  }
+  .pcEsconder {
+    display: none;
+  }
+  .celEsconder {
+    display: block;
+  }
+}
